@@ -71,12 +71,10 @@ html {
   font-size: 62.5%;
 }
 
-/* body {
-  font-family: almanach-light, Arial, sans-serif;
-  /* color: var(--color-text); */
+body {
+  font-family: "almanach-light", Arial, sans-serif;
   font-size: 1.6rem;
-  line-height: 1.5;
-} */
+}
 
 h1,
 h2 {
@@ -108,10 +106,10 @@ h4 {
   font-size: 1.2rem;
 }
 
-p,
+/* p,
 a {
   font-size: 1.6rem;
-}
+} */
 
 @media screen and (min-width: 768px) {
   h1 {
@@ -137,22 +135,49 @@ a {
   font-family: "almanach-regular", Arial, sans-serif;
 }
 
-.link-sign-in {
+.link--sign-in {
   color: var(--color-secondary);
 }
 
-.link-primary {
+.link--primary {
   color: var(--color-secondary);
   text-decoration: none;
 }
 
-.link-sign-in:hover,
-.link-primary:hover {
+.link--sign-in:hover,
+.link--primary:hover {
   color: navy;
 }
 
-.link-secondary {
+.link--secondary {
   color: var(--color-white);
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
+.link--nav {
+  color: var(--color-text);
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .link--nav {
+    font-size: 1.4rem;
+  }
+}
+
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--block .list__item {
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
