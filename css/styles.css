@@ -458,7 +458,6 @@ a {
 }
 
 .feature__music {
-  border: 2px solid tomato;
   display: flex;
   justify-content: center;
   column-gap: 1rem;
