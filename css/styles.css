@@ -1,3 +1,158 @@
-body {
-  background-color: gold;
+:root {
+  --color-primary: #204399;
+  --color-secondary: #11afe2;
+  --color-text: #222222;
+  --color-white: white;
 }
+
+@font-face {
+  font-family: "quincy-bold";
+  src: url("fonts/Quincy/fontspring-demo-quincycf-bold-webfont.woff2")
+      format("woff2"),
+    url("fonts/Quincy/fonts/fontspring-demo-quincycf-bold-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "quincy-medium";
+  src: url("fonts/Quincy/fontspring-demo-quincycf-medium-webfont.woff2")
+      format("woff2"),
+    url("fonts/Quincy/fontspring-demo-quincycf-medium-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "quincy-regular";
+  src: url("fonts/Quincy/fontspring-demo-quincycf-regular-webfont.woff2")
+      format("woff2"),
+    url("fonts/Quincy/fontspring-demo-quincycf-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "almanach-light";
+  src: url("fonts/Almanach/almanachtest-light-webfont.woff2") format("woff2"),
+    url("fonts/Almanach/almanachtest-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "almanach-medium";
+  src: url("fonts/Almanach/almanachtest-medium-webfont.woff2") format("woff2"),
+    url("fonts/Almanach/almanachtest-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "almanach-regular";
+  src: url("fonts/Almanach/almanachtest-regular-webfont.woff2") format("woff2"),
+    url("fonts/Almanach/almanachtest-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
+
+/* body {
+  font-family: almanach-light, Arial, sans-serif;
+  /* color: var(--color-text); */
+  font-size: 1.6rem;
+  line-height: 1.5;
+} */
+
+h1,
+h2 {
+  /* color: var(--color-white); */
+  font-family: quincy-medium, "Georgia Bold", "Times New Roman Bold", serif;
+}
+
+h2,
+h3,
+h4,
+p {
+  color: var(--color-text);
+  font-family: "almanach-regular", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p,
+a {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 9.6rem;
+  }
+
+  h2 {
+    font-size: 5.2rem;
+  }
+
+  h3 {
+    font-size: 2.8rem;
+  }
+
+  p,
+  a {
+    font-size: 1.8rem;
+  }
+}
+
+/*Links*/
+a {
+  font-family: "almanach-regular", Arial, sans-serif;
+}
+
+.link-sign-in {
+  color: var(--color-secondary);
+}
+
+.link-primary {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.link-sign-in:hover,
+.link-primary:hover {
+  color: navy;
+}
+
+.link-secondary {
+  color: var(--color-white);
+  font-size: 1.2rem;
+}
+
