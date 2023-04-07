@@ -6,10 +6,20 @@
 }
 
 @font-face {
+  font-family: "quincy-black";
+  src: url("fonts/Quincy/fontspring-demo-quincycf-black-webfont.woff2")
+      format("woff2"),
+    url("fonts/Quincy/fontspring-demo-quincycf-black-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "quincy-bold";
   src: url("fonts/Quincy/fontspring-demo-quincycf-bold-webfont.woff2")
       format("woff2"),
-    url("fonts/Quincy/fonts/fontspring-demo-quincycf-bold-webfont.woff")
+    url("fonts/Quincy/fontspring-demo-quincycf-bold-webfont.woff")
       format("woff");
   font-weight: normal;
   font-style: normal;
@@ -72,7 +82,7 @@ html {
 }
 
 body {
-  font-family: "almanach-light", Arial, sans-serif;
+  font-family: "almanach-regular", Arial, sans-serif;
   /* font-size: 1.6rem; */
 }
 
@@ -80,9 +90,9 @@ h1,
 h2 {
   /* color: var(--color-white); */
   font-family: quincy-medium, "Georgia Bold", "Times New Roman Bold", serif;
+  text-align: center;
 }
 
-h2,
 h3,
 h4,
 p {
@@ -91,7 +101,7 @@ p {
 }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: 5.4rem;
 }
 
 h2 {
@@ -106,11 +116,14 @@ h4 {
   font-size: 1.2rem;
 }
 
-p,
-input {
-  font-size: 1.8rem;
+p {
+  font-size: 2rem;
   line-height: 1.3;
   text-align: center;
+}
+
+input {
+  font-size: 2.1rem;
 }
 
 a {
@@ -119,7 +132,7 @@ a {
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 9.6rem;
+    font-size: 9rem;
   }
 
   h2 {
@@ -131,9 +144,12 @@ a {
   }
 
   p,
-  a,
-  input {
+  a {
     font-size: 2.1rem;
+  }
+
+  input {
+    font-size: 2.3rem;
   }
 }
 
@@ -164,7 +180,12 @@ a {
 }
 
 .link--small {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-family: "almanach-light", Arial, sans-serif;
+}
+
+.link--underline {
+  text-decoration: underline;
 }
 
 /* .link--nav {
@@ -206,13 +227,17 @@ a {
   outline: 0;
   white-space: nowrap;
   text-align: center;
-  padding: 1rem 2.5rem;
-  margin: 5rem 0 0 0;
+  padding: 1.25rem 3rem;
+  width: 15rem;
 }
 
 .btn--primary {
   background: var(--color-secondary);
   border: 1px solid var(--color-secondary);
+}
+
+.btn--primary:hover {
+  background: #18a1cd;
 }
 
 .btn--secondary {
@@ -221,14 +246,14 @@ a {
 }
 
 .btn--block {
-  width: 100%;
-  display: inline-block;
+  width: 90vw;
+  display: block;
 }
 
 /* Inputs */
 .input {
   text-align: left;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   border: 0;
   background: var(--color-white);
   outline: 0;
@@ -237,4 +262,133 @@ a {
 
 ::placeholder {
   color: #cdcbd7;
+}
+
+/* Welcome Block */
+
+.welcome__header {
+  padding: 0 2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+}
+
+.welcome__body {
+  width: 100vw;
+  padding: 0 2rem;
+}
+
+.welcome__btn {
+  max-width: 32rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.welcome__footer {
+  display: inline;
+}
+
+@media screen and (max-width: 320px) {
+  .welcome__btn {
+    width: 28rem;
+    row-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .welcome__header {
+    width: 70rem;
+    margin: auto;
+  }
+  .welcome__body {
+    width: 55rem;
+    margin: auto;
+  }
+}
+
+/* Form Block*/
+
+.form {
+  background: var(--color-primary);
+  padding-bottom: 10rem;
+}
+
+.form__header {
+  display: flex;
+  justify-content: center;
+  color: var(--color-white);
+  padding-top: 4rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  letter-spacing: 1.2px;
+  font-family: "almanach-light", Arial, sans-serif;
+}
+
+.form__body {
+  color: var(--color-white);
+  font-family: "almanach-light", Arial, sans-serif;
+  padding: 0 1.5rem;
+  margin: 1rem 0;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 90vw;
+  margin: auto;
+  padding: 0.8rem 0 0.5rem;
+}
+
+.form__footer {
+  font-size: 1.6rem;
+  color: var(--color-white);
+  padding: 0 1.5rem;
+  font-family: "almanach-light", Arial, sans-serif;
+}
+
+.form__footer-btn {
+  background: rgb(17, 175, 226, 0.25);
+  border: 0;
+  color: white;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.form--shrinked {
+  display: contents;
+}
+
+@media screen and (min-width: 768px) {
+  .form__body {
+    width: 42rem;
+    margin: auto;
+    padding: 1rem 0 1.5rem;
+  }
+
+  .form__input,
+  .form__footer-btn {
+    width: 42rem;
+  }
+
+  .form--shrinked {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form--shrinked .input {
+    width: 20.5rem;
+  }
+
+  .form__footer {
+    width: 40rem;
+    margin: auto;
+    padding: 2rem 0;
+  }
 }
