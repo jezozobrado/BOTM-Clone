@@ -106,7 +106,8 @@ h4 {
   font-size: 1.2rem;
 }
 
-p {
+p,
+input {
   font-size: 1.8rem;
   line-height: 1.3;
   text-align: center;
@@ -130,7 +131,8 @@ a {
   }
 
   p,
-  a {
+  a,
+  input {
     font-size: 2.1rem;
   }
 }
@@ -221,4 +223,18 @@ a {
 .btn--block {
   width: 100%;
   display: inline-block;
+}
+
+/* Inputs */
+.input {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border: 0;
+  background: var(--color-white);
+  outline: 0;
+  border-radius: 3px;
+}
+
+::placeholder {
+  color: #cdcbd7;
 }
