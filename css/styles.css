@@ -277,6 +277,16 @@ a {
 
 /* Welcome Block */
 
+.welcome {
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .welcome {
+    margin-top: 8rem;
+  }
+}
+
 .welcome__header {
   padding: 0 2rem;
   letter-spacing: 0.5px;
@@ -335,9 +345,15 @@ a {
   color: var(--color-white);
   padding-top: 4rem;
   padding-bottom: 0;
-  margin-bottom: 0;
+  margin: 0;
   letter-spacing: 1.2px;
   font-family: "almanach-light", Arial, sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  .form__header {
+    padding-top: 8rem;
+  }
 }
 
 .form__body {
@@ -691,5 +707,40 @@ a {
     align-items: center;
     position: relative;
     top: -3px;
+  }
+}
+
+/* Hero */
+
+.hero__image {
+  width: 100vw;
+  height: 32rem;
+  object-fit: cover;
+  object-position: right 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__image {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    background: rgb(32, 67, 153);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(32, 67, 153, 1) 50%
+    );
+    margin: 0;
+    padding: 0;
+  }
+  .hero__image {
+    display: flex;
+    width: 98rem;
+    height: auto;
+    margin: auto;
   }
 }
