@@ -11,11 +11,11 @@
   </head>
 
   <body>
-    <nav class="nav">
+    <nav class="nav collapsible">
       <div class="burger" id="burger">
         <span class="burgerLines"> </span>
       </div>
-      <a href="">
+      <a href="#">
         <div class="logo">
           <svg
             version="1.1"
@@ -89,14 +89,37 @@
         </div>
       </a>
 
-      <ul class="list list--block nav__list">
+      <ul class="list list--block nav__list collapsible__content">
         <li class="list__item">
           <a href="#" class="link--nav nav__item">April books</a>
         </li>
         <li class="list__item">
           <a href="#" class="link--nav nav__item">All books</a>
         </li>
+
+        <li class="list__item">
+          <a href="#" class="link--nav nav__item">How it works</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="link--nav nav__item">Gifts</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="link--nav nav__item">Relationship status</a>
+        </li>
       </ul>
+
+      <a
+        href="#"
+        class="link--black btn btn--secondary nav__btn collapsible__content"
+        >Log in</a
+      >
+      <a
+        href="#"
+        class="link--white btn btn--primary nav__btn collapsible__content"
+        >Sign up</a
+      >
     </nav>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
