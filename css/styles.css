@@ -549,3 +549,71 @@ a {
     order: 1;
   }
 }
+
+/* Nav Bar */
+
+.burger {
+  display: block;
+  width: 30px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+.burger span,
+.burger span:before,
+.burger span:after {
+  height: 3px;
+  width: 30px;
+  background: var(--color-text);
+  position: absolute;
+  display: flex;
+  border-radius: 0;
+  content: "";
+}
+
+.burger span {
+  top: 22px;
+}
+
+.burger span:before {
+  top: -10px;
+}
+
+.burger span:after {
+  bottom: -10px;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 2;
+}
+
+.logo svg {
+  width: 100%;
+  max-width: 180px;
+  /* height: 44px;
+  width: 180px; */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+
+.nav__list {
+  width: 100%;
+  margin-left: -2rem;
+}
+
+.nav__item {
+  color: var(--color-text);
+  transition: color 300ms;
+}
+
+.nav__item:hover {
+  color: var(--color-secondary);
+}
